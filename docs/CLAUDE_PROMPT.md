@@ -1,6 +1,6 @@
 # Kickoff prompt for Claude Code
 
-Paste this into Claude Code, started from the root of https://github.com/Day-avi/bridge:
+Paste this into Claude Code, started from the root of the cloned repo (https://github.com/Day-avi/bridge):
 
 ```text
 You are working in the GitHub repo https://github.com/Day-avi/bridge.
