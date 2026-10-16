@@ -39,7 +39,7 @@ Gate: run on 3 real accounts (incl. yours); owner confirms report is accurate an
 
 ### Phase 2 — Strategy engine
 Owner onboarding (ideal buyer, countries, goal), 30-day strategy, weekly Reel briefs, experiment tracking, weekly revision.
-Gate: 5 pilot owners rate recommendations; at least some executed; manual review for hallucinations.
+Gate: 5 pilot owners rate recommendations; some executed; manual review for hallucinations.
 
 ### Phase 3 — Comment safety and leads
 Classifier with categories, review queue, auto-hide for high confidence, buyer-intent detection, Hindi/English/Hinglish test set.
