@@ -5,7 +5,7 @@ Read docs/GREENPRINT.md and docs/BLUEPRINT.md before any work. They are the sour
 ## Rules
 - Work on ONE phase at a time. Never start a phase before the previous gate is approved by the founder.
 - Plan first: for each task, write a short plan and wait for approval before coding.
-- Work on a branch; open a pull request; never push to main.
+- Work on a branch; open a pull request; never push to main (after the initial docs commit).
 - Never deploy to production, run destructive DB commands, or change auth/billing without explicit approval.
 - Never commit secrets. Use .env.example for variable names only.
 - Use official Meta, Shopify and Shiprocket APIs only. No scraping.
