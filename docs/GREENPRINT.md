@@ -4,7 +4,7 @@
 Bridge helps Instagram product businesses attract the right buyers and automate the path from Reel to delivered order.
 
 ## Who it is for
-Small Instagram-first sellers of physical products: clothing, handicrafts, jewellery, art, beauty, home decor. Start with India; expand globally later.
+Small Instagram-first sellers of physical products: clothing, handicrafts, jewellery, art, beauty, home décor. Start with India; expand globally later.
 
 ## Problems
 1. Reels reach the wrong audience; engagement does not become sales.
