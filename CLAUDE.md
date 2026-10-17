@@ -16,8 +16,21 @@ Read docs/GREENPRINT.md and docs/BLUEPRINT.md before any work. They are the sour
 - Verify current library and API versions from official docs before using them.
 - If a requirement is ambiguous or risky, stop and ask.
 
-## Commands (fill in after Phase 0 scaffold)
-install / dev / lint / typecheck / test / e2e
+## Commands
+- install: `npm ci` (Node 24, see `.nvmrc`)
+- local database: `npm run db:start` (Docker), `npm run db:reset`, `npm run db:types` after any migration
+- dev: `npm run dev`
+- checks: `npm run format:check`, `npm run lint`, `npm run typecheck`
+- unit tests: `npm test`
+- RLS tests: `npm run test:db` (pgTAP files in `supabase/tests/database/`)
+- e2e: `npm run build && npm run test:e2e` (Playwright; reads confirmation emails from Mailpit)
+
+## Conventions
+- Database changes are new files in `supabase/migrations/`; never edit an applied migration.
+- New tenant tables reuse `private.is_workspace_member()` / `private.is_workspace_owner()` in their policies and get allowed/denied cases in `supabase/tests/database/`.
+- Server code reads the user through `src/lib/auth.ts` (`getClaims`), never `getSession()`.
+- Feature code lives in `src/modules/<name>/`; pages in `src/app/` stay thin.
+- Setup steps for the founder live in `docs/SETUP.md`.
 
 ## Communication
 The founder is not a developer. Explain decisions in plain language, show what changed and how to test it, and list anything needing founder action.
